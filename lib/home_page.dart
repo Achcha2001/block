@@ -1,6 +1,5 @@
-// HomePage.dart
-
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'AttendancePage.dart';
 import 'ConferenceRoomPage.dart';
 import 'NotificationPage.dart';
@@ -9,7 +8,6 @@ import 'ReserveWorkstationPage.dart';
 import 'profilepage.dart';
 import 'teleboothpage.dart';
 import 'MassageChairPage.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class LargeButtonWidget extends StatelessWidget {
   final List<String> texts;
@@ -232,7 +230,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 20), // Add some space between the buttons
+                    SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
